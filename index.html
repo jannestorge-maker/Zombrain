@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Zombrain</title>
+  <meta name="description" content="Zombrain – dein Gehirn verrottet, wenn du scrollst. Privates Hobbyprojekt.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#FFF6E9" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1E1A17" media="(prefers-color-scheme: dark)">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Zombrain">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="app" class="shell">
+    <nav class="nav" id="nav" aria-label="Hauptnavigation">
+      <div class="nav-logo">
+        <span class="nav-logo-brain" id="navBrain" aria-hidden="true"></span>
+        <span>Zombrain</span>
+      </div>
+      <a href="#/home" data-tab="home"><span class="ico" aria-hidden="true">🧠</span><span class="lbl">Gehirn</span></a>
+      <a href="#/focus" data-tab="focus"><span class="ico" aria-hidden="true">⏳</span><span class="lbl">Fokus</span></a>
+      <a href="#/schedule" data-tab="schedule"><span class="ico" aria-hidden="true">🌙</span><span class="lbl">Zeitplan</span></a>
+      <a href="#/stats" data-tab="stats"><span class="ico" aria-hidden="true">📊</span><span class="lbl">Statistik</span></a>
+      <a href="#/settings" data-tab="settings"><span class="ico" aria-hidden="true">⚙️</span><span class="lbl">Mehr</span></a>
+    </nav>
+    <main id="view" class="view" tabindex="-1"></main>
+  </div>
+  <div id="sheetRoot"></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
